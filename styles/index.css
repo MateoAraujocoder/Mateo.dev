@@ -16,45 +16,25 @@ body {
     width: 100%;
     height: 100%;
     background-color: #284d71;
-    /* Gris azulado */
 
-}
-
-/**  BOXS   **/
-
-.box2 {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    background-color: rgba(255, 255, 255, 0.5);
-
-    border: 1px solid black;
-    border-radius: 20px;
-    padding: 20px;
-    margin: 20px;
-    margin-top: 20px;
 }
 
 .mi-foto {
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    ;
     object-fit: cover;
 }
 
+/**CONTENTS**/
 #page-container {
     position: relative;
     top: 50px;
 }
 
-
-
-
-/**CONTENTS**/
 .content {
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     font-family: 'Work Sans';
@@ -73,7 +53,7 @@ body {
     margin: 10px;
 }
 
-.content h2{
+.content h2 {
     font-size: 20px;
 }
 
@@ -89,11 +69,10 @@ body {
     box-shadow: 0 10px 20px -10px rgba(0, 0, 0, 0.8);
 }
 
-
 .content-nav nav {
     display: flex;
- flex-direction:row;
- justify-content: center;
+    flex-direction: row;
+    justify-content: center;
     margin: 10px;
 }
 
@@ -130,7 +109,6 @@ body {
     line-height: 42px;
     margin: 48px 5px;
     font-size: 20px;
-    transition: .3s;
     text-align: center;
 }
 
@@ -139,41 +117,74 @@ body {
     background-color: #1CB698;
 
 }
-
 .content2 {
-
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     background-color: rgba(255, 255, 255, 0.5);
     border: 1px solid black;
     width: 60%;
-    max-width: 800px;
+    max-width: 900px;
     border-radius: 20px;
     padding: 20px;
-    margin: 0px auto;
+    margin: 0 auto;
     margin-top: 20px;
-
-}
-
-.content2 img {
-    width: 200px;
-    height: 200px;
-
 }
 
 .content2 h2 {
+    font-family: 'Kanit';
+    font-size: 40px;
+    margin-bottom: 20px;
+}
 
-    font-family: 'Work Sans';
-    margin: 20px;
+.content2 .image-container {
+    display: flex;
+    justify-content: center;
+}
 
+.content2 a {
+    position: relative;
+}
+
+.content2 a::before {
+    content: '';
+     position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 1;
+}
+
+.content2 a:hover::before {
+    content: 'Piedra,Papel,Tijera';
+    font-family: 'Kanit';
+    color: black;
+    opacity: 1;
+    font-size: 30px;
+}
+
+.content2 a:nth-child(2):hover::before {
+    content: 'Tiendas Naturales';
+}
+
+.content2 a:nth-child(3):hover::before {
+    content: 'Ecommerce';
 }
 
 .content2 img {
-    border-radius: 10px;
-
+    border-radius:10%;
+    margin: 10px;
+    width: 250px;
+    height: auto;
+    transition: filter 0.3s ease;
 }
+
+.content2 img:hover {
+    filter: grayscale(100%) opacity(0.8);
+}
+
 
 /**SOBRE-MI**/
 .sobre-mi {
@@ -182,24 +193,85 @@ body {
     border-radius: 20px;
     padding: 20px;
     margin: 20px;
+    text-align: center;
 }
 
 .sobre-mi h1 {
-display: flex;
-justify-content: center;
-font-size: 40px;
+    font-size: 40px;
+    font-family: 'Kanit';
+    margin: 10px;
+}
+
+.sobre-mi p {
+    margin: 20px;
+    font-size: 20px;
+    font-family: 'Work Sans';
+}
+
+.sobre-mi span {
+    color: #015958;
+    font-size: 20px;
+}
+
+.sobre-mi-contenido {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.sobre-mi ul li strong {
     font-family: 'Work Sans';
 
 }
 
-.col h2{
-font-family: 'Work Sans';
-
+.col,
+.hobbies {
+    width: 48%;
 }
-.col ul li{
 
- text-decoration: none;
- list-style: none;   
-font-family: 'Work Sans';
+.col h2 {
+    margin: 20px;
+    font-family: 'Work Sans';
+}
 
+.col ul,
+.hobbies ul {
+    list-style: none;
+    padding: 0;
+}
+
+.col ul li,
+.hobbies ul li {
+    margin-bottom: 10px;
+}
+
+.col strong {
+    color: #015958;
+}
+
+/**HOBBIES**/
+.hobbies {
+    display: flex;
+    flex-direction: row;
+
+    margin: 20px;
+}
+
+.hobbies h2 {
+    font-family: 'Work Sans';
+    margin: 30px;
+}
+
+.hobbies img {
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 1px solid black;
+    width: 50px;
+    height: 50px;
+    border-radius: 20px;
+    padding: 20px;
+    margin-right: 10px;
+}
+
+.hobbies img:hover {
+    background-color: #1CB698;
 }
