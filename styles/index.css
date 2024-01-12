@@ -117,6 +117,7 @@ body {
     background-color: #1CB698;
 
 }
+
 .content2 {
     display: flex;
     flex-direction: column;
@@ -148,7 +149,7 @@ body {
 
 .content2 a::before {
     content: '';
-     position: absolute;
+    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -174,7 +175,7 @@ body {
 }
 
 .content2 img {
-    border-radius:10%;
+    border-radius: 10%;
     margin: 10px;
     width: 250px;
     height: auto;
@@ -274,4 +275,88 @@ body {
 
 .hobbies img:hover {
     background-color: #1CB698;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #343a40;
+    position: relative;
+}
+
+.footer h1 {
+    font-family: 'Kanit';
+    color: #fff;
+    margin: 0;
+}
+
+.footer .redes {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+#scrollToTopButton {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.skills {
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+}
+
+.skills h1 {
+    color: #015958;
+    font-family: 'Kanit';
+font-size: 40px;
+}
+.skills h2 {
+color: #015958;
+font-family: 'Kanit';
+
+}
+
+#html {
+    color: #E34C26;
+    font-size: 64px;
+}
+
+#css {
+    color: #264DE4;
+    font-size: 64px;
+}
+
+#javascript {
+    color: #F0DB4F;
+    font-size: 64px;
+}
+
+#react {
+    color: #61DBFB;
+    font-size: 64px;
+}
+#sass{
+color: #cc6699;
+font-size: 64px
+}
+#github{
+    font-size: 64px;
+}
+.skills img{
+    width: 64px;
 }
