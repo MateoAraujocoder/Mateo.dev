@@ -23,25 +23,22 @@
     <link rel="stylesheet " href="./styles/index.css">
 </head>
 <!--ENCABEZADO-->
-<header class="content-nav">
-
-    <nav>
-        <ul>
+<header id="Inicio" class="content-nav">
+    <button class="hamburger">☰</button>
+    <nav class="nav">
+        <ul class="nav-list">
+            <button class="close">X</button>
             <li><a href="#inicio">Inicio</a></li>
-
             <li><a href="#sobre-mi">Sobre mí</a></li>
-
+            <li><a href="#skills">Skills</a></li>
             <li><a href="#proyectos">Proyectos</a></li>
-
-            <li><a href="#contacto">Contacto</a></li>
         </ul>
     </nav>
-
 </header>
 
 <!--CONTENIDO-INICIO-->
 
-<body id="Inicio">
+<body id="inicio">
     <canvas id="canvas"></canvas>
     <div id="page-container">
 
@@ -61,7 +58,7 @@
 
         <!--CONTENIDO-SOBRE-MI-->
 
-        <div class="sobre-mi">
+        <div id="sobre-mi" class="sobre-mi">
             <h1>Sobre Mi</h1>
             <p><span>¡Hola! Soy Mateo Oliva Araujo</span> Soy Mateo Oliva Araujo Un desarrollador frontend junior con un
                 gran entusiasmo por transformar ideas creativas en experiencias digitales cautivadoras.</p>
@@ -95,71 +92,72 @@
                     <div>
                         <img src="./img/palanca-de-mando.png" alt="">
                     </div>
-                      <div>
+                    <div>
                         <img src="./img/camera.png" alt="">
                     </div>
                 </div>
 
             </div>
         </div>
-        
-<div class="skills">
-<h1>Skills</h1>
-<h2>Lenguajes</h2>
-<ion-icon id="html" name="logo-html5"></ion-icon>
-<ion-icon id="css" name="logo-css3"></ion-icon>
-<ion-icon id="javascript" name="logo-javascript"></ion-icon>
 
-<h2>Frameworks y librerias</h2>
-<ion-icon id="react" name="logo-react"></ion-icon>
-<ion-icon id="sass" name="logo-sass"></ion-icon>
-<img src="./img/icons8-chakra-ui-logo-48.png" alt="">
+        <div id="skills" class="skills">
+            <h1>Skills</h1>
+            <h2>Lenguajes</h2>
+            <ion-icon id="html" name="logo-html5"></ion-icon>
+            <ion-icon id="css" name="logo-css3"></ion-icon>
+            <ion-icon id="javascript" name="logo-javascript"></ion-icon>
 
-<h2>Tecnologias y herramientas</h2>
-<img src="./img/icons8-git-50.png" alt="">
-<ion-icon id="github" name="logo-github"></ion-icon>
-<img src="./img/Vitejs-logo.svg.png" alt="">
+            <h2>Frameworks y librerias</h2>
+            <ion-icon id="react" name="logo-react"></ion-icon>
+            <ion-icon id="sass" name="logo-sass"></ion-icon>
+            <img src="./img/icons8-chakra-ui-logo-48.png" alt="">
 
-</div>
+            <h2>Tecnologias y herramientas</h2>
+            <img src="./img/icons8-git-50.png" alt="">
+            <ion-icon id="github" name="logo-github"></ion-icon>
+            <img src="./img/Vitejs-logo.svg.png" alt="">
 
-        <div class="content2">
+        </div>
+
+        <div id="proyectos" class="content2">
             <h2>Proyectos</h2>
-        
+
             <div class="image-container">
                 <a href="https://piedra-papel-o-tijera-rho.vercel.app/" target="_blank" data-="">
                     <img src="./img/Captura de pantalla (6).png">
                 </a>
-                
+
                 <a href="https://tiendas-naturales.vercel.app/" target="_blank">
                     <img src="./img/Captura de pantalla (8).png">
                 </a>
-                
+
                 <a href="https://react-ecommerce-xi-seven.vercel.app/" target="_blank">
                     <img src="./img/Captura de pantalla (10).png">
                 </a>
             </div>
         </div>
-        
 
 
 
-<footer class="footer">
-    <a href="#Inicio" id="scrollToTopButton">
-        <i class="fas fa-arrow-up"></i>
-    </a>
 
-    <div class="redes">
-        <h1>Escribeme</h1>
-        <a href="https://github.com/MateoAraujocoder"><i class="fab fa-github"></i></a>
-        <a href="https://www.instagram.com/araujo_mate0/"><i class="fab fa-instagram"></i></a>
-        <a href="https://www.linkedin.com/in/mateo-oliva-araujo-81839a2a1/"><i class="fab fa-linkedin"></i></a>
-    </div>
+        <footer class="footer">
+            <a href="#Inicio" id="scrollToTopButton">
+                <i class="fas fa-arrow-up"></i>
+            </a>
 
-</footer>
+            <div class="redes">
+                <h1>Escribeme</h1>
+                <a href="https://github.com/MateoAraujocoder"><i class="fab fa-github"></i></a>
+                <a href="https://www.instagram.com/araujo_mate0/"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/mateo-oliva-araujo-81839a2a1/"><i class="fab fa-linkedin"></i></a>
+            </div>
 
-    <script src="./JS/animatedBackgroud.js"></script>
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        </footer>
+
+        <script src="./JS/boton.js"></script>
+        <script src="./JS/animatedBackgroud.js"></script>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 
 

@@ -323,11 +323,12 @@ body {
 .skills h1 {
     color: #015958;
     font-family: 'Kanit';
-font-size: 40px;
+    font-size: 40px;
 }
+
 .skills h2 {
-color: #015958;
-font-family: 'Kanit';
+    color: #015958;
+    font-family: 'Kanit';
 
 }
 
@@ -350,13 +351,88 @@ font-family: 'Kanit';
     color: #61DBFB;
     font-size: 64px;
 }
-#sass{
-color: #cc6699;
-font-size: 64px
+
+#sass {
+    color: #cc6699;
+    font-size: 64px
 }
-#github{
+
+#github {
     font-size: 64px;
 }
-.skills img{
+
+.skills img {
     width: 64px;
+}
+
+.nav{
+    display: none;
+}
+.hamburger{
+    display:none;
+}   
+.close{
+    display: none;
+}
+@media only screen and (max-width: 600px) {
+    .content h1 {
+        font-size: 30px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .sobre-mi-contenido {
+        flex-direction: column;
+    }
+
+    .col,
+    .hobbies {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .content2 img {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    #html,
+    #css,
+    #javascript,
+    #react,
+    #sass,
+    #github {
+        font-size: 40px;
+    }
+
+    .skills img {
+        width: 40px;
+    }
+}
+
+/* Estilos para dispositivos móviles y tabletas */
+@media only screen and (max-width: 768px) {
+    .hamburger{
+        display: block;
+        margin: 1rem ;
+        font-size: 30px;
+        background-color: #343a40;
+        color: #fff;
+        border-style: none;
+    }
+    .close{
+        display: block;
+        margin: 1rem ;
+        font-size: 20px;
+        background-color: #343a40;
+        color: #fff;
+        border-style: none;
+    }
+    .content-nav nav ul {
+        align-items: center;
+    }
 }
